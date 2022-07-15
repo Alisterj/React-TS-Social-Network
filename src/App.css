@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+body{
+    background: url("./images/low_poly_abstract_design_background_0107.jpg") no-repeat;
+    background-size: 100% 100vh;
+}
+.app-wrapper {
+}
+/*img{
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+}*/
+.header {
+    padding: 0 5px;
+    background: #536976;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #292E49, #536976);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #292E49, #536976); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.header_content{
+    max-width: 1300px;
+    height: 70px;
+    margin: 0 auto;
+}
+.header_content img {
+    height: 100%;
+}
+.header img:hover {
+    filter: sepia(1) hue-rotate(320deg) saturate(10);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-and-content{
+    margin: 10px auto 0;
+    padding: 0 5px;
+    max-width: 1310px;
+    display: flex;
+    gap: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav {
+    flex: 15%;
+    background: #FDC830;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F37335, #FDC830);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F37335, #FDC830); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border-radius: 10px;
+    text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+.content {
+    flex: 85%;
+    background: #59C173;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-.App-link {
-  color: #61dafb;
+    border-radius: 10px;
+    overflow:hidden
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content_topoboi img{
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
 }
