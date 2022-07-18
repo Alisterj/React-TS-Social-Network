@@ -1,0 +1,15 @@
+.post_wrapper{
+    display: inline-block;
+    background-color: #FDC830;
+    border-radius: 10px;
+}
+.post{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 15px;
+}
+.post img{
+    border-radius: 50%;
+    max-width: 70px;
+}

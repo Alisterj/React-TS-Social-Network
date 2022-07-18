@@ -1,0 +1,3 @@
+.posts div:not(:last-child){
+    margin-bottom: 20px;
+}
