@@ -1,3 +1,7 @@
+* {box-sizing:border-box;}
+input {
+    all: unset;
+}
 body::-webkit-scrollbar {
     width: 0;
     height: 0;
