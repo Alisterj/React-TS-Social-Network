@@ -11,7 +11,7 @@ type PostType = {
 }
 
 const MyPosts = () => {
-    let post: PostType[] = [
+    const post: PostType[] = [
         {
             id: v1(),
             title: 'First post',
