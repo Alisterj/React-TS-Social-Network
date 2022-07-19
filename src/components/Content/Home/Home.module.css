@@ -1,15 +1,34 @@
 .content {
     flex: 85%;
-    /*background: #59C173;  !* fallback for old browsers *!
-    background: -webkit-linear-gradient(to right, #5D26C1, #a17fe0, #59C173);  !* Chrome 10-25, Safari 5.1-6 *!
-    background: linear-gradient(to right, #5D26C1, #a17fe0, #59C173); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!
-*/
     border-radius: 10px;
-    overflow:hidden
+    overflow: hidden
 }
-.content_topoboi img{
+.content_imgs{
+    margin-bottom: -120px;
+}
+.background_img{
+    height: 300px;
     width: 100%;
-    max-height: 300px;
-    object-fit: cover;
     border-radius: 10px;
+    overflow: hidden;
+}
+.img_person{
+    position: relative;
+    top: -80px;
+    left: 50px;
+    max-height: 150px;
+    max-width: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.content_imgs img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.aboutMe{
+    margin-left: 240px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 20px;
 }

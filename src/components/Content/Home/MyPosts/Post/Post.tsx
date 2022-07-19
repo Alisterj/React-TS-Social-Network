@@ -1,5 +1,4 @@
 import React from 'react';
-import deep from '../../../../../images/deer.jpg'
 import s from './Post.module.css'
 
 type PostPropsType = {

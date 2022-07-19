@@ -1,6 +1,6 @@
 .add_post_wrapper{
-    background-color: #292E49;
-    border-radius: 10px 0 10px 0;
+    background-color: #ffffff;
+    border-radius: 10px;
     padding: 10px;
     margin-bottom: 10px;
 }
@@ -8,9 +8,29 @@
 }
 .add_post_form{
 }
-.add_post_form textarea{
+/*.add_post_form textarea{
     margin: 0;
     box-sizing: border-box;
     width: 100%;
     min-height: 30px;
+}*/
+.add_post_form input{
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 30px;
+    height: 100%;
+    padding: 3px 15px;
+    background-color: burlywood;
+    border-radius: 10px;
+    resize: none;
+}
+.newPost_btn{
+    height: 100%;
+    padding: 5px 10px;
+    margin-top: 5px;
+    background-color: #8fbcab;
+    border-radius: 10px;
+}
+.newPost_btn:not(:last-child){
+    margin-right: 10px;
 }

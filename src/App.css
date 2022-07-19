@@ -7,8 +7,9 @@ body{
     -ms-overflow-style: none;
     scrollbar-width: none;
 
-    background: url("./images/low_poly_abstract_design_background_0107.jpg") no-repeat;
+    background: url("https://img.freepik.com/free-vector/low-poly-white-background-design_1017-33204.jpg?t=st=1658228643~exp=1658229243~hmac=e44f6ec129bcf4ce00d8d0611bb4ec68277eabbd07c87c51494a945302d44f2e&w=1380") no-repeat;
     background-size: 100% 100vh;
+    background-attachment: fixed;
 }
 .app-wrapper {
 }
