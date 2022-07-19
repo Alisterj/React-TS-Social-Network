@@ -1,5 +1,9 @@
 .add_post{
     background-color: #ffffff;
+    border: 1px solid #f0f0f0;
+    border-bottom: 2px solid #b6b3b3;
+    border-right: 2px solid #b6b3b3;
+
     border-radius: 10px;
     margin-bottom: 20px;
     padding: 15px 20px;

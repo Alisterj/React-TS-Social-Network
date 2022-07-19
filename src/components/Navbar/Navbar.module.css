@@ -1,6 +1,12 @@
 .nav {
+    position: sticky;
+    top: 5px;
     flex: 15%;
     background-color: white;
+    border: 1px solid #f0f0f0;
+    border-bottom: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+
     border-radius: 10px;
     text-align: center;
     height: 100%;
