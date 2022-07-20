@@ -1,10 +1,11 @@
 import React, {useReducer} from 'react';
 import './App.css';
 import Header from "./components/Header/Header";
-import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./components/Header/Navbar/Navbar";
 import Home from "./components/Content/Home/Home";
 import {v1} from "uuid";
 import {addPostAC, PostsReducer} from "./reducer/PostsReducer";
+import Dialogs from "./components/Content/Dialogs/Dialogs";
 
 export type PostType = {
     id: string
@@ -37,9 +38,13 @@ function App() {
         <div className="app-wrapper">
             <Header/>
             <div className={'nav-and-content'}>
-                <Navbar/>
-                <Home posts={posts}
-                      addPost={addPost}/>
+                <div className="nav">
+                </div>
+                <div className="content">
+                    <Home posts={posts}
+                          addPost={addPost}/>
+                    {/*<Dialogs/>*/}
+                </div>
             </div>
         </div>
     );
