@@ -5,9 +5,10 @@ import {PostType} from "../../../App";
 
 type HomePropsType = {
     posts: PostType[]
+    addPost: (title: string) => void
 }
 
-const Home = () => {
+const Home = (props: HomePropsType) => {
     return (
         <div className={s.content}>
             <div className={s.content_imgs}>
@@ -17,12 +18,12 @@ const Home = () => {
                 <div className={s.img_person}>
                     <img src="https://pixelbox.ru/wp-content/uploads/2021/08/avatars-genshin-impact-80-1068x1068.jpg" alt=""/>
                 </div>
-
             </div>
             <div className={s.aboutMe}>
                 Кагальницкая Дарья
             </div>
-            <MyPosts/>
+            <MyPosts posts={props.posts}
+                     addPost={props.addPost}/>
         </div>
     );
 };

@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {useReducer} from 'react';
 import './App.css';
 import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Content/Home/Home";
 import {v1} from "uuid";
+import {addPostAC, PostsReducer} from "./reducer/PostsReducer";
 
 export type PostType = {
     id: string
@@ -12,7 +13,7 @@ export type PostType = {
 }
 
 function App() {
-    const post: PostType[] = [
+    const [posts, postsDispatch] = useReducer(PostsReducer, [
         {
             id: v1(),
             title: 'First post',
@@ -28,13 +29,17 @@ function App() {
             title: 'Three post',
             img: 'https://sun6-21.userapi.com/s/v1/if1/uIOOTDpJEVJSUjomaC2M2BmtCg74TCrqYx2KR9s-Pdq99JOigzrfCHRQaV4ZWqG7Syqf-FMd.jpg?size=2160x2160&quality=96&crop=0,0,2160,2160&ava=1'
         },
-    ]
+    ])
+    const addPost = (title: string) => {
+        postsDispatch(addPostAC(title))
+    }
     return (
         <div className="app-wrapper">
             <Header/>
             <div className={'nav-and-content'}>
                 <Navbar/>
-                <Home/>
+                <Home posts={posts}
+                      addPost={addPost}/>
             </div>
         </div>
     );

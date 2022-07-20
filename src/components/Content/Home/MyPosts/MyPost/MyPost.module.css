@@ -14,40 +14,7 @@
     margin-bottom: 10px;
     font-size: 20px;
 }
-.add_post_form_input{
-    box-sizing: border-box;/*Обнуление для редактирования*/
-    margin: 0;/*Обнуление для редактирования*/
 
-    width: 100%;
-    min-height: 40px;
-    font-size: 16px;
-    background-color: #e3bbad;
-    border-radius: 10px;
-    padding: 3px 15px;
-}
-button {
-    padding: 0;
-    border: none;
-    font: inherit;
-    color: inherit;
-    background-color: transparent;
-    /* отображаем курсор в виде руки при наведении; некоторые
-    считают, что необходимо оставлять стрелочный вид для кнопок */
-    cursor: pointer;
-}
-.add_post_form_btns{
-    margin-top: 15px;
-}
-.add_post_form_btns button:not(:last-child){
-    margin-right: 15px;
-}
-.add_post_form_btns button{
-    background: #CC95C0;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    border-radius: 15px;
-    padding: 3px 10px;
-}
 /*.add_post_wrapper{
     background-color: #ffffff;
     border-radius: 10px;
