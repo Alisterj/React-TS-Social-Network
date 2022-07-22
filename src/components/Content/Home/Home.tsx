@@ -20,7 +20,7 @@ const Home = (props: HomePropsType) => {
                 </div>
             </div>
             <div className={s.aboutMe}>
-                Кагальницкая Дарья
+                Kagalnitskaya Dasha
             </div>
             <MyPosts posts={props.posts}
                      addPost={props.addPost}/>

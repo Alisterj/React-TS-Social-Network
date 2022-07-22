@@ -1,3 +1,12 @@
 .dialog_wrapper{
+    display: flex;
+    padding: 10px;
     background-color: #7AA1D2;
+}
+.dialogs_item{
+    width: 20%;
+    min-width: 100px;
+    text-align: center;
+}
+.messages{
 }
