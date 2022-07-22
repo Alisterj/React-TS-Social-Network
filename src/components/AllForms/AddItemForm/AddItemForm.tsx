@@ -1,4 +1,4 @@
-import React, {ChangeEvent, useState} from 'react';
+import React, {ChangeEvent, KeyboardEvent, useState} from 'react';
 import s from "./AddItemForm.module.css";
 
 type AddItemFormPropsType = {
@@ -20,12 +20,17 @@ const AddItemForm = (props: AddItemFormPropsType) => {
             setError('The window is empty or the value is entered incorrectly')
         setTitle('')
     }
+    const onKeyPressAdd = (e:KeyboardEvent<HTMLInputElement>) => {
+        if (e.key === 'Enter')
+            onClickAdd()
+    }
     return (
         <>
             <input className={s.add_post_form_input}
                    placeholder={!!error ? error : ''}
                    value={title}
-                   onChange={onChangeSetTitle}/>
+                   onChange={onChangeSetTitle}
+                   onKeyPress={onKeyPressAdd}/>
             <div className={s.add_post_form_btns}>
                 <button className={s.btn_add} onClick={onClickAdd}>Add post</button>
                 <button className={s.btn_remove}>Remove</button>

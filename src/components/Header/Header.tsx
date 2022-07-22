@@ -10,15 +10,7 @@ const Header = () => {
                 <div className={s.header_logo}>
                     <img src={deer} alt=""/>
                 </div>
-                <div className={s.header_menu}>
-                    <ul className={s.menu}>
-                        <li><a href={'#'} className={s.active}>Home</a></li>
-                        <li><a href={'#'}>Messages</a></li>
-                        <li><a href={'#'}>News</a></li>
-                        <li><a href={'#'}>Music</a></li>
-                        <li><a href={'#'}>Setting</a></li>
-                    </ul>
-                </div>
+                <Navbar/>
             </div>
         </header>
     );

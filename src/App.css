@@ -25,7 +25,7 @@ body{
     display: flex;
     gap: 20px;
 }
-.nav{
+.friend_list{
     flex: 15%;
     position: sticky;
     top: 5px;

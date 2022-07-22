@@ -1,0 +1,21 @@
+.menu{
+    margin: 0 40px;
+}
+.menu li{
+    display: inline-block;
+}
+.menu li + li{
+    margin-left: 50px;
+}
+.menu li a{
+    display: inline-block;
+    color: #ffffff;
+    line-height: 30px;
+    font-weight: bold;
+}
+.menu a:hover{
+    color: burlywood;
+}
+.menu a.active{
+    border-top: 2px solid seagreen;
+}

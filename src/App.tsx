@@ -1,11 +1,14 @@
 import React, {useReducer} from 'react';
 import './App.css';
 import Header from "./components/Header/Header";
-import Navbar from "./components/Header/Navbar/Navbar";
 import Home from "./components/Content/Home/Home";
 import {v1} from "uuid";
 import {addPostAC, PostsReducer} from "./reducer/PostsReducer";
 import Dialogs from "./components/Content/Dialogs/Dialogs";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Music from "./components/Music/Music";
+import News from "./components/News/News";
+import Setting from "./components/Setting/Setting";
 
 export type PostType = {
     id: string
@@ -35,18 +38,26 @@ function App() {
         postsDispatch(addPostAC(title))
     }
     return (
-        <div className="app-wrapper">
-            <Header/>
-            <div className={'nav-and-content'}>
-                <div className="nav">
-                </div>
-                <div className="content">
-                    <Home posts={posts}
-                          addPost={addPost}/>
-                    {/*<Dialogs/>*/}
+        <BrowserRouter>
+            <div className="app-wrapper">
+                <Header/>
+                <div className={'nav-and-content'}>
+                    <div className="friend_list">
+                        <span>friend_list</span>
+                    </div>
+                    <div className="content">
+                        <Routes>
+                            <Route path={'/home'} element={<Home posts={posts}
+                                                                addPost={addPost}/>}/>
+                            <Route path={'/dialog'} element={<Dialogs/>}/>
+                            <Route path={'/news'} element={<News/>}/>
+                            <Route path={'/music'} element={<Music/>}/>
+                            <Route path={'/setting'} element={<Setting/>}/>
+                        </Routes>
+                    </div>
                 </div>
             </div>
-        </div>
+        </BrowserRouter>
     );
 }
 
